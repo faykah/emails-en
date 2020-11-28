@@ -47,10 +47,10 @@ In this example, we will use [@faykah/core](https://github.com/faykah/core) to c
 ES6
 
 ```ts
-import { createArrayGenerator } from "@faykah/core";
+import { createGenerator } from "@faykah/core";
 import { emails } from "@faykah/emails-en";
 
-const generateEmail = createArrayGenerator(emails);
+const generateEmail = createGenerator(emails);
 
 generateEmail(); // "john.doe@example.com"
 generateEmail(); // "foo@bar.com"
@@ -59,10 +59,10 @@ generateEmail(); // "foo@bar.com"
 CJS
 
 ```js
-const { createArrayGenerator } = require("@faykah/core");
+const { createGenerator } = require("@faykah/core");
 const { emails } = require("@faykah/emails-en");
 
-const generateEmail = createArrayGenerator(emails);
+const generateEmail = createGenerator(emails);
 
 generateEmail(); // "john.doe@example.com"
 generateEmail(); // "foo@bar.com"
@@ -76,7 +76,7 @@ Browser
 	<script type="text/javascript" src="https://unpkg.com/@faykah/emails-en@0.1.0/lib/index.browser.min.js" defer></script>
 
 	<script type="text/javascript" defer>
-		const generateEmail = Faykah.createArrayGenerator(Faykah.emails);
+		const generateEmail = Faykah.createGenerator(Faykah.emails);
 
 		generateEmail(); // "john.doe@example.com"
 		generateEmail(); // "foo@bar.com"

@@ -8,4 +8,8 @@ describe("emails", () => {
 
 		expect(types).to.be.deep.equal(["string"]);
 	});
+
+	it("should not contains duplicates", () => {
+		expect([...new Set(emails)]).to.be.deep.equal(emails);
+	});
 });

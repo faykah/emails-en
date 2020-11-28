@@ -1,6 +1,6 @@
 {
   "name": "@faykah/emails-en",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Emails data set in English.",
   "homepage": "https://github.com/faykah/emails-en",
   "main": "lib/index.js",

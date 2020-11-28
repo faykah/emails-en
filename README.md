@@ -17,7 +17,7 @@ This library contains a data set of English emails suited for mocking and testin
 
 ## Features
 
-- Provides a variables containing a lot of emails for testing purposes
+- Provides a variables containing 114 emails for testing purposes
 - Provides a browser version
 - Provides its own Typescript types
 

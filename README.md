@@ -73,11 +73,14 @@ Browser
 ```html
 <body>
 	<script type="text/javascript" src="https://unpkg.com/@faykah/core@0.1.0/lib/index.browser.min.js" defer></script>
-	<script type="text/javascript" src="https://unpkg.com/@faykah/emails-en@0.1.0/lib/index.browser.min.js" defer></script>
+	<script type="text/javascript" src="https://unpkg.com/@faykah/emails-en@0.1.1/lib/index.browser.min.js" defer></script>
 
 	<script type="text/javascript" defer>
-		const generateEmail = Faykah.createGenerator(Faykah.emails);
+		const { createGenerator } = Faykah;
+		const { emails } = Faykah.emails;
 
+		const generateEmail = createGenerator(emails);
+		
 		generateEmail(); // "john.doe@example.com"
 		generateEmail(); // "foo@bar.com"
 	</script>
@@ -112,10 +115,12 @@ Browser
 
 ```html
 <body>
-	<script type="text/javascript" src="https://unpkg.com/@faykah/emails-en@0.1.0/lib/index.browser.min.js" defer></script>
+	<script type="text/javascript" src="https://unpkg.com/@faykah/emails-en@0.1.1/lib/index.browser.min.js" defer></script>
 
 	<script type="text/javascript" defer>
-		for (const email of Faykah.emails) {
+		const { emails } = Faykah.emails;
+
+		for (const email of emails) {
 			console.log(email);
 		}
 	</script>

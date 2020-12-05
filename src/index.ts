@@ -1,7 +1,7 @@
 /**
  * @see https://blogs.ancestry.com/cm/calling-james-smith-10-most-common-first-and-surname-combinations/
  */
-const emails: String[] = [
+const emails = [
 	"james.smith@example.com",
 	"j.smith@example.com",
 	"jsmith@example.com",

@@ -19,6 +19,7 @@ None.
 
 ### Bug & security fixes
 
+- Fixed a bug when the exported Typescript type for the emails const was wrong.
 - The browsers snippets will now correctly work.
 
 ## 0.1.1

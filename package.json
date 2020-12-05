@@ -4,7 +4,7 @@
   "description": "Emails data set in English.",
   "homepage": "https://github.com/faykah/emails-en",
   "main": "lib/index.js",
-  "browser": "lib/main.browser.min.js",
+  "browser": "lib/index.browser.min.js",
   "license": "MIT",
   "typings": "lib/index.d.ts",
   "keywords": [
@@ -35,7 +35,7 @@
   },
   "scripts": {
     "build": "./node_modules/rollup/dist/bin/rollup -c && ./node_modules/typescript/bin/tsc --declaration --emitDeclarationOnly --declarationDir lib",
-    "test": "./node_modules/mocha/bin/mocha --require ts-node/register tests/**/*.test.ts",
+    "test": "env TS_NODE_PROJECT=\"tsconfig.test.json\" ./node_modules/mocha/bin/mocha --require ts-node/register tests/**/*.test.ts",
     "release": "./node_modules/np/source/cli.js"
   },
   "files": [

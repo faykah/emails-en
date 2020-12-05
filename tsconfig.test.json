@@ -1,11 +1,11 @@
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"module": "ESNext",
+		"module": "CommonJS",
 		"strict": true,
 		"moduleResolution": "Node"
 	},
 	"include": [
 		"src/**/*.ts"
-	] 
+	]
 }
